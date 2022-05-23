@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*---CORPO DA CALCULADORA---*/
+
+.container{
+    width: 500px;
+    height: 380px;
+    background-color: rgb(143, 143, 143);
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+/*---TÍTULO---*/
+
+.title{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imc{
+    color: rgb(155, 16, 16);
+}
+
+/*---INPUTS--*/
+
+.input{
+    height: 60px;
+}
+
+.p-input{
+    padding: 2px;
+    margin-right: 4px;
+    letter-spacing: 2px;
+    background: rgba(3, 75, 19, 0.884);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    font-weight: bold;
+}
+
+#nome{
+    height: 30px;
+    width: 99%;
+    border-radius: 10px;
+}
+
+#altura{
+    height: 30px;
+    width: 99%;
+    border-radius: 10px;
+}
+
+#peso{
+    height: 30px;
+    width: 99%;
+    border-radius: 10px;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px;
+}
+
+.inputbox{
+    position: relative;
+}
+
+.inputuser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(128, 126, 126);
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputuser:focus ~ .labelinput,
+.inputuser:valid ~ .labelinput{
+    top: -20px;
+    font-size: 12px;
+}
+
+
+/*---BOTÃO---*/
+
+#calcular{
+    margin-top: 18px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 22px;
+    background-color: rgb(70, 70, 70);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+#calcular:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+/*---RESULTADO---*/
+
+.result{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(209, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
